@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.dentakun.R;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
