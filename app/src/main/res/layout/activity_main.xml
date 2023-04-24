@@ -11,20 +11,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-<!--        入力確定領域-->
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5">
 
-            <LinearLayout
-                android:id="@+id/decided_area"
+<!--        入力確定領域-->
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
-            </LinearLayout>
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="8dp"
+                android:isScrollContainer="false">
 
-        </ScrollView>
+                <LinearLayout
+                    android:id="@+id/decided_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
 
 <!--        結果領域-->
         <LinearLayout
@@ -37,6 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="right"
+                android:background="@color/gray"
                 android:autoSizeTextType="uniform">
             </TextView>
 

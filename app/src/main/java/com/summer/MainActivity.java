@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -102,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 currentArea.setText(currentText);
                 linearLayout.removeView(textView);
             });
-            textView.setTextSize(20);
+            textView.setTextSize(40);
+            textView.setBackground(this.getDrawable(R.drawable.input_key));
             linearLayout.addView(textView, layoutParams);
             this.resetCurrentArea();
         });
