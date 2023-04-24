@@ -119,6 +119,10 @@ public class MainActivity extends AppCompatActivity {
             TextView textView = this.findViewById(R.id.current_area);
             textView.setText(sum.toString());
         });
+        this.findViewById(R.id.reset).setOnClickListener((listener) -> {
+            LinearLayout linearLayout = this.findViewById(R.id.decided_area);
+            linearLayout.removeAllViews();
+        });
     }
 
     private void resetCurrentArea() {

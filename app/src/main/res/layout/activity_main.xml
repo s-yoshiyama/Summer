@@ -85,6 +85,12 @@
                     style="@style/inputKey">
                 </androidx.appcompat.widget.AppCompatButton>
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/reset"
+                    android:text="@string/reset"
+                    style="@style/inputKey">
+                </androidx.appcompat.widget.AppCompatButton>
+
             </LinearLayout>
 
 <!--            2段目-->
