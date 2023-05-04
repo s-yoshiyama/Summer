@@ -98,9 +98,11 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(currentText);
             textView.setGravity(Gravity.RIGHT);
             textView.setOnClickListener((textViewListener) -> {
-                TextView currentArea = this.findViewById(R.id.current_area);
-                currentArea.setText(currentText);
-                linearLayout.removeView(textView);
+                if (currentText != "" || currentText != null) {
+                    TextView currentArea = this.findViewById(R.id.current_area);
+                    currentArea.setText(currentText);
+                    linearLayout.removeView(textView);
+                }
             });
             textView.setTextSize(40);
             textView.setBackground(this.getDrawable(R.drawable.input_key));
