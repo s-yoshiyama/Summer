@@ -54,127 +54,199 @@
         </LinearLayout>
 
 <!--        入力領域-->
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
             android:orientation="vertical">
 
 <!--            1段目-->
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/oneStep"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/twoStep">
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/seven"
                     android:text="@string/seven"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/eight">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/eight"
                     android:text="@string/eight"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/seven"
+                    app:layout_constraintEnd_toStartOf="@id/nine">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/nine"
                     android:text="@string/nine"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/eight"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </Button>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!--            2段目-->
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/twoStep"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/oneStep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/threeStep">
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/four"
                     android:text="@string/four"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/five">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/five"
                     android:text="@string/five"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/four"
+                    app:layout_constraintEnd_toStartOf="@id/six">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/six"
                     android:text="@string/six"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/five"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </Button>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!--            3段目-->
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/threeStep"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/twoStep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/fourStep">
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/one"
                     android:text="@string/one"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/two">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/two"
                     android:text="@string/two"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/one"
+                    app:layout_constraintEnd_toStartOf="@id/three">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/three"
                     android:text="@string/three"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/two"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </Button>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!--            4段目-->
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fourStep"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/threeStep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/clear"
                     android:text="@string/clear"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/zero">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/zero"
                     android:text="@string/zero"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/clear"
+                    app:layout_constraintEnd_toStartOf="@id/enter">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/enter"
                     android:text="@string/enter"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/zero"
+                    app:layout_constraintEnd_toStartOf="@id/calc">
+                </Button>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <Button
                     android:id="@+id/calc"
                     android:text="@string/calc"
-                    style="@style/inputKey">
-                </androidx.appcompat.widget.AppCompatButton>
+                    style="@style/inputKey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/enter"
+                    app:layout_constraintEnd_toEndOf="parent">
+                </Button>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
