@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -46,7 +48,7 @@
                 android:id="@+id/current_area"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="right"
+                android:gravity="end"
                 android:background="@color/gray"
                 android:autoSizeTextType="uniform">
             </TextView>
@@ -72,7 +74,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/twoStep">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/seven"
                     android:text="@string/seven"
                     style="@style/inputKey"
@@ -80,9 +82,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/eight">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/eight"
                     android:text="@string/eight"
                     style="@style/inputKey"
@@ -90,9 +92,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seven"
                     app:layout_constraintEnd_toStartOf="@id/nine">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/nine"
                     android:text="@string/nine"
                     style="@style/inputKey"
@@ -100,7 +102,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/eight"
                     app:layout_constraintEnd_toEndOf="parent">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -116,7 +118,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/threeStep">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/four"
                     android:text="@string/four"
                     style="@style/inputKey"
@@ -124,9 +126,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/five">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/five"
                     android:text="@string/five"
                     style="@style/inputKey"
@@ -134,9 +136,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/four"
                     app:layout_constraintEnd_toStartOf="@id/six">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/six"
                     android:text="@string/six"
                     style="@style/inputKey"
@@ -144,7 +146,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/five"
                     app:layout_constraintEnd_toEndOf="parent">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -160,7 +162,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/fourStep">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/one"
                     android:text="@string/one"
                     style="@style/inputKey"
@@ -168,9 +170,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/two">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/two"
                     android:text="@string/two"
                     style="@style/inputKey"
@@ -178,9 +180,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/one"
                     app:layout_constraintEnd_toStartOf="@id/three">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/three"
                     android:text="@string/three"
                     style="@style/inputKey"
@@ -188,7 +190,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/two"
                     app:layout_constraintEnd_toEndOf="parent">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -204,7 +206,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/clear"
                     android:text="@string/clear"
                     style="@style/inputKey"
@@ -212,9 +214,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/zero">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/zero"
                     android:text="@string/zero"
                     style="@style/inputKey"
@@ -222,9 +224,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/clear"
                     app:layout_constraintEnd_toStartOf="@id/enter">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/enter"
                     android:text="@string/enter"
                     style="@style/inputKey"
@@ -232,9 +234,9 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/zero"
                     app:layout_constraintEnd_toStartOf="@id/calc">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/calc"
                     android:text="@string/calc"
                     style="@style/inputKey"
@@ -242,7 +244,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/enter"
                     app:layout_constraintEnd_toEndOf="parent">
-                </Button>
+                </com.google.android.material.button.MaterialButton>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -26,6 +26,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.summer'
+
+    dataBinding {
+        enable = true
+    }
+
+    viewBinding {
+        enable = true
+    }
+
 }
 
 dependencies {
